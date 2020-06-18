@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Weather Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <section class="hero is-primary is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Weather Dashboard
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" id="search">
+        <div class="columns">
+            <div class="column is-3" id="input-form">
+              <h2 class="subtitle">Search for a City:</h2>
+              <input class="input is-primary" type="text" placeholder="Enter a City" id="subject">
+                <button class="button is-primary is-outlined" id="search-btn">Search</button>
+              </input>
+              <div class="column">
+                <div class="columns is-mobile">
+                  <div class="column is-full" id="prev-searches">
+                    <h2 class=>Previous Searches:</h2>
+                      <div class="card" style="width: 18rem;">
+                          <ul class="list-group list-group-flush prev-list"> 
+                              <button class='button is-primary is-outlined' id="clear">Clear Results</button>
+                          </ul>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="columns">
+          <div class="column">
+            <div class="card" id="current-box">
+              <div class="card-content">
+                <h2 class="card-header" id="current-city"></h2>
+                <img class="icon" src="" alt="Weather icon">
+                <p class="content current-temp"></p>
+                <p class="content current-hum"></p>
+                <p class="content current-wind"></p>
+                <p class="content current-uv"></p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-full" id="forecast-banner">
+            <h2 class="column is-12">5-Day Forecast:</h2>
+            <div class="row ml-1 card-group forecast-list"></div>    
+          </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  </body>
+</html>

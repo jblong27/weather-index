@@ -1,0 +1,40 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+#input-form {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+input {
+    position: relative;
+    display: block;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+}
+#search-btn {
+    position: absolute;
+    top: 65px;
+    right: 655px;
+    display: inline-flex;
+    padding: 10px 20px;
+    float: right;
+}
+
+#search {
+    margin-left: 0px;
+}
+
+#prev-searches {
+    text-align: left;
+}
